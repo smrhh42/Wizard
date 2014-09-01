@@ -1,0 +1,496 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body, div, section, article, ul, li, aside, h1,h2,h3,p{ margin:0px; padding:0px;}
+
+
+html{
+  height: 100%;
+}
+body {
+	display: -webkit-box;
+	-webkit-box-pack: start;
+	-webkit-box-orient: vertical;
+	-webkit-box-align: center;
+	
+	
+  background-image:url(../images/body.png);
+  background-size: cover;
+  background-repeat:repeat-x;
+  
+  min-width: 1000px;
+  height: 100%;
+
+}
+header{	
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	-webkit-box-pack: center;
+	background-image:url(../images/header.png);
+	width: 100%;
+	height: 45px;
+	-webkit-box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+	border-bottom: 1px inset gray;
+	
+	
+}
+
+#leftHeader{
+
+	height: 45px;
+	width:30%;
+	-webkit-box-flex:0;
+}
+
+#leftHeader img{
+	width: 241px;
+	height: 45px;
+	
+}
+
+
+#centerHeader{
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	height: 45px;
+	width: 40%;
+	
+	-webkit-box-flex:1;
+	min-width: 150px;
+}
+
+#centerHeader input{
+	
+	width: 250px;
+	padding: 4px;
+	border-radius: 3px;
+	
+}
+
+#leftCenterHeader{
+	
+	
+}
+
+#rightCenterHeader{
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	
+	
+	
+}
+#rightHeader{
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	height: 45px;
+	width: 30%;
+		
+	-webkit-box-flex:1;
+}
+
+
+
+
+#subHeader{
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	width: 100%;
+	height: 40px;
+	background-color: #ededed;
+	border: 1px solid #ccc;
+	-webkit-box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+
+	
+}
+
+#subHeader ul{
+	list-style: none;
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	font-family: 'Gilda Display', serif;
+	width: 100%;
+	
+}
+
+
+#subHeader ul li{
+	
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	-webkit-box-flex: 1;
+	cursor: pointer;
+	color: #800;
+}
+
+#subHeader ul li:hover{
+	
+	color: #000;
+}
+
+
+
+
+
+
+#searchIcon{
+	
+	width: 25px;
+	margin-top: 5px;	
+}
+
+#leftRightHeader{
+	display:-webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: end;
+	-webkit-box-flex: 1;
+	height: 45px;
+	color: #510000;
+	
+}
+
+
+
+#rightRightHeader{
+	display:-webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	
+	-webkit-box-flex: 0;
+	width: 30px;
+	height: 45px;
+	
+}
+
+
+#idUSerTool{
+width: 30px;
+	height: 20px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+#userText{
+	text-shadow: 0 -1px 0 #510000;
+	list-style:none;
+}
+
+
+
+
+section{
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	
+	width: 100%;
+	min-height: 550px;
+	margin-top: 20px;
+	
+	
+}
+
+aside{
+	
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	width: 300px;
+	
+	-webkit-box-flex: 0;
+	border-right: 1px inset gray;
+	
+}
+
+aside ul{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	list-style: none;
+	
+	width: 230px;
+	border-top: 1px outset gray;
+	border-bottom: 1px outset gray;
+	
+	
+}
+
+aside ul li{
+		display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	height: 40px;
+	width: 100%;
+	
+	color: #036;
+	font-family: 'Gilda Display', serif;
+	
+	
+}
+
+aside ul li:hover{
+	
+	color: #B00;
+	cursor: pointer;
+	background-color:#f0f0f0;
+	
+	
+}
+
+article{
+		display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	
+		-webkit-box-flex: 1;
+	
+	}
+
+
+footer{
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	-webkit-box-align: center;
+	
+   
+	height: 40px;
+	width: 100%;
+	font-family: 'Gilda Display', serif;
+	
+	background-color: #ededed;
+	border-top: 1px solid gray;
+	
+}
+
+#leftFooter{
+	min-width: 600px;
+	max-width: 800px;
+	color: #800;
+	
+}
+
+#leftFooter ul{
+	
+		display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	
+}
+
+#leftFooter ul li{
+	
+	display: -webkit-box;
+	-webkit-box-flex: 1;
+	-webkit-box-pack: center;
+	cursor: pointer;
+	
+}
+
+#leftFooter ul li:hover{
+	
+	text-decoration: underline;
+	
+}
+
+#rightFooter{
+	
+	display: -webkit-box;
+	-webkit-box-pack: end;
+	-webkit-box-flex: 1;
+	color: #006;
+	
+	
+}
+
+footer p{
+	
+	margin-right: 10px;
+	font-family: 'Gilda Display', serif;
+}
+
+#spanFooter{
+	
+	color: #700;
+}
+
+#logoTemple{
+	cursor: pointer;
+	
+}
+
+#loginBox{
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	position: absolute;
+	top: 45px;
+	right: 0px;
+	width: 300px;
+	height: 0px;
+	background-image:url(../images/header.png);
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	transition: ease-in-out 1s; 
+	-webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+	
+}
+
+
+#loginBox input{
+ text-align: center;	
+	}
+
+
+#contaLogin{
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	width: 300px;
+	}
+#formLogin{
+	display: none;
+	
+}
+
+#loginBox input{
+	
+font-family: 'Gilda Display', serif;
+font-size: 12px;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+
+	
+}
+#loginBox button{
+	position:absolute;
+	width: 0px;
+	height: 0px;
+}
+
+#buttonLogin{
+	visibility:hidden;
+	
+}
+
+
+
+#uploadCSVbox{
+	
+	
+	width: 400px;
+	height: 150px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+	background-color: rgba(221,221,221,0.5);
+	
+	
+}
+
+#Title{
+	text-align: center;
+	text-shadow: 2px 2px 2px rgba(17,17,17,0.4);
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #6d1b21;
+}
+
+#containerForm{
+	
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+
+	border: 1px inset rgba(221,221,221,1);
+	height: 50px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#lineForm{
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+}
+
+#line1Form{
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	width: 250px;
+	height: 30px;
+	background-color: #EEE;
+	margin-right: 20px;
+	border: 1px outset rgba(221,221,221,1);
+}
+
+#line1Form input{
+	
+	padding: 2px;
+	border-radius: 2px;
+}
+
+#line2Form input{
+	
+	padding: 5px;
+	border-radius: 2px;
+	background-color: #6d1b21;
+	color: white;
+}
+
+#progressbox{
+	display: none;
+	-webkit-box-align: start;
+	-webkit-box-pack: center;
+	width: 380px;
+	height: 30px;
+	
+
+	
+}
+
+progress{
+	height: 10px;
+	width: 350px;
+}
+
+
+
+#divImage{
+	width: 20px;
+}
+#divImage img{
+	width: 20px;
+
+}
+
+#centerLogout{
+	margin-left: 5px;
+	margin-right: 5px;
+	color:#DDD;
+}
+
+#rightLogout{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+
+#rightLogout:hover{
+	color: white;
+	cursor: pointer;
+}
