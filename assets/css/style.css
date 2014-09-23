@@ -196,7 +196,7 @@ hr {
 }
 
 .mt {
-	margin-top: 25px;
+	margin-top: 50px;
 }
 
 .mb {
@@ -2354,5 +2354,9 @@ ul.sidebar-menu li ul.sub li a:hover{
 }
 .userLiMenu:hover{
 	background-color: #f7f7f7;
+}
+
+#logoHeader2{
+	display: none;
 }
 

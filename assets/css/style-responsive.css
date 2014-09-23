@@ -225,6 +225,14 @@
     .img-responsive {
         width: 100%;
     }
+	#logoHeader1{
+	display: none;
+}
+#logoHeader2{
+	display: block;
+}
+
+	
 
 }
 
@@ -265,6 +273,18 @@
 	color: #fff;
 	display: none;
 }
+#logoHeader1{
+	display: none;
+}
+#logoHeader2{
+	display: block;
+}
+
+#top_menu{
+	display: block;
+	margin-left: 30px;
+}
+
 
 }
 
@@ -297,6 +317,12 @@
 	margin-top: 20px;
 	color: #fff;
 	display: none;
+}
+#logoHeader1{
+	display: none;
+}
+#logoHeader2{
+	display: block;
 }
 
 }
@@ -339,6 +365,13 @@
 	margin-top: 20px;
 	color: #fff;
 	display: none;
+}
+
+#logoHeader1{
+	display: none;
+}
+#logoHeader2{
+	display: block;
 }
 
 }

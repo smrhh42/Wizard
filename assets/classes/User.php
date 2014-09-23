@@ -4,15 +4,12 @@
 
 Table "User"
 
-
-User_Id	
-First_Name
-Last_Name
-Email	
-Temple_id	
+User_Id		
 Password
 Image
 User_Type_Id
+Student_Id
+
 
 */
 
@@ -25,13 +22,11 @@ class User
 	private $User;
 	
 	public
-	$User_Id,	
-	$First_Name,
-	$Last_Name,
-	$Email,
-	$Temple_id,
+	$User_Id,		
+	$Password,
 	$Image,
-	$Password;
+	$User_Type_Id,
+	$Student_Id;
 	
 	
 		public function __construct()
@@ -43,12 +38,12 @@ class User
 		
 	
 		
-	public function Insert_User($First_Name,$Last_Name,$Email,$Temple_id,$Password,$Image)
+	public function Insert_User($Email,$Password,$Image,$User_Type_Id,$Student_Id)
 		{
 			$Password = md5($Password);
 			$User_Type_Id = 1;
 			
-			$query_checkEmail = $this->User->prepare("SELECT * FROM User WHERE Email = ?");
+			$query_checkEmail = $this->User->prepare("SELECT * FROM Student WHERE Email_Type_Address = ?");
 			$query_checkEmail->bindParam(1,$Email);
 			$query_checkEmail->execute();
 			
@@ -173,10 +168,7 @@ class User
 						{
 							
 							session_start();
-							
 							$_SESSION['Email'] = $Email;
-							
-						
 							return 1;  // return 1 because it is true
 							
 						}else
@@ -205,8 +197,4 @@ class User
 				}
 			
 		} // end Delete_User($User_Id)
-		 
-	
-	
-	
-} // End of my Users Class
+}
