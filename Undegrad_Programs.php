@@ -1,3 +1,26 @@
+
+<?php
+session_start();
+if (!isset($_SESSION['Email'])) {
+	
+	header("Location: Login.php");
+	
+}else if(isset($_SESSION['Email'])){
+	
+	if (time() - $_SESSION['Time'] > 1800) {
+		// session started more than 30 minutes ago
+		header("Location: Login.php?ExpiredSession");
+	
+	}else{
+		
+		session_regenerate_id(true);    // change session ID for the current session and invalidate old session ID
+		$_SESSION['Time'] = time();  // update creation time
+		$_SESSION['Email'] = $Email;
+		
+	}
+	
+}
+?>
 <!DOCTYPE html>
 <html lang="en"><!-- InstanceBegin template="/Templates/Wizard_template.dwt" codeOutsideHTMLIsLocked="false" -->
   <head>
@@ -225,7 +248,7 @@
 									</li>
 									
 									<li class="userLiMenu">
-										<a href="#">
+										<a href="assets/PHP/functionLogin.php?logout">
 											<i class="fa fa-power-off"></i>
 											<span>Logout</span>
 										</a>
@@ -259,7 +282,7 @@
               <ul class="sidebar-menu" id="nav-accordion">
               	  	
                   <li class="mt">
-                      <a class="active" href="index.html">
+                      <a class="active" href="index.php">
                           <i class="fa fa-home"></i>
                           <span>Home</span>
                       </a>
@@ -271,8 +294,8 @@
                           <span>Administrative</span>
                       </a>
                       <ul class="sub">
-                          <li><a  href="Students.html">Students</a></li>
-                          <li><a  href="Faculties.html">Faculties</a></li>
+                          <li><a  href="Students.php">Students</a></li>
+                          <li><a  href="Faculties.php">Faculties</a></li>
                          
                       </ul>
                   </li>
@@ -283,8 +306,8 @@
                           <span>Organizer</span>
                       </a>
                       <ul class="sub">
-                          <li><a  href="Calendar.html">Calendar</a></li>
-                          <li><a  href="Todo_list.html">Todo List</a></li>
+                          <li><a  href="Calendar.php">Calendar</a></li>
+                          <li><a  href="Todo_list.php">Todo List</a></li>
                       </ul>
                   </li>
                   <li class="sub-menu">
@@ -293,9 +316,9 @@
                           <span>Programs</span>
                       </a>
                       <ul class="sub">
-                          <li><a  href="Undegrad_Programs.html">Undegraduate Programs</a></li>
-                          <li><a  href="Graduate_Programs.html">Graduate Programs</a></li>
-                          <li><a  href="International.html">International</a></li>
+                          <li><a  href="Undegrad_Programs.php">Undegraduate Programs</a></li>
+                          <li><a  href="Graduate_Programs.php">Graduate Programs</a></li>
+                          <li><a  href="International.php">International</a></li>
                       </ul>
                   </li>
                   <li class="sub-menu">
@@ -304,13 +327,13 @@
                           <span>Forms</span>
                       </a>
                       <ul class="sub">
-                      	  <li><a  href="Form_display.html">Display Forms</a></li>
-                          <li><a  href="Form_Create.html">Create Form</a></li>
-                          <li><a  href="Form_PDF.html">Update PDF's Form</a></li>
+                      	  <li><a  href="Form_display.php">Display Forms</a></li>
+                          <li><a  href="Form_Create.php">Create Form</a></li>
+                          <li><a  href="Form_PDF.php">Update PDF's Form</a></li>
                       </ul>
                   </li>
                   <li class="sub-menu">
-                      <a href="UpdateData.html" >
+                      <a href="UpdateData.php" >
                           <i class="fa fa-cog"></i>
                           <span>Update Data</span>
                       </a>
@@ -353,7 +376,7 @@
   </section>
 
       <!-- js placed at the end of the document so the pages load faster -->
-    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery-1.11.1.js"></script>
     <script src="assets/js/jquery-ui-1.9.2.custom.min.js"></script>
 	<script src="assets/js/fullcalendar/fullcalendar.min.js"></script>    
     <script src="assets/js/bootstrap.min.js"></script>
@@ -366,7 +389,8 @@
     <script src="assets/js/common-scripts.js"></script>
 
     <!--script for this page-->
-	<script src="assets/js/calendar-conf-events.js"></script>    
+	<script src="assets/js/calendar-conf-events.js"></script> 
+     
   
 
   </body>

@@ -7,7 +7,7 @@
 		
 		private
 		$host		=	"localhost",
-		$db			=	"juanhf_Wizard",
+		$db			=	"juanhf_Wizard_Juan",
 		$userName 	=	"juanhf",
 		$password	= 	"Jhf#5479";
 		

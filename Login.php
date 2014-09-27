@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -46,19 +47,21 @@
 		
 		                </span>
 		            </label>
-		            <button class="btn btn-theme btn-block" type="buttom" id="btnLogin"><i class="fa fa-lock"></i> SIGN IN</button>
+		            <button class="btn-theme btn-block" type="buttom" id="btnLogin"><i class="fa fa-lock"></i> SIGN IN</button>
 		            <hr>
 		            
 		            
 		            <div class="registration">
 		                Don't have an account yet?<br/>
-		                <a class="" href="#">
-		                    Create an account
+		                <a data-toggle="modal" href="login.html#myModal2">
+		                    Request a password
 		                </a>
 		            </div>
-		
+					
+		        	
+	  	
 		        </div>
-		
+		</form>	
 		          <!-- Modal -->
 		          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
 		              <div class="modal-dialog">
@@ -80,16 +83,76 @@
 		              </div>
 		          </div>
 		          <!-- modal -->
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                   <!-- Modal 2 to Request a password -->
+		          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal2" class="modal fade">
+		              <div class="modal-dialog">
+		                  <div class="modal-content">
+		                      <div class="modal-header">
+		                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		                          <h4 class="modal-title">Request a passord</h4>
+		                      </div>
+		                      <div class="modal-body">
+		                          <p>Enter your e-mail address from Temple University.</p>
+		                          <input type="text" id="EmailRequest" placeholder="Email" autocomplete="off" class="form-control placeholder-no-fix">
 		
-		      </form>	  	
-	  	
+		                      </div>
+		                      <div class="modal-footer">
+		                          <button data-dismiss="modal" class="btn btn-default" type="button">Cancel</button>
+		                          <button class="btn btn-theme" type="button" id="btnRequestPassword">Submit</button>
+		                      </div>
+		                  </div>
+		              </div>
+		          </div>
+		          <!-- modal3 -->
+                  
+                  
+                  
+                  
+                     <!-- Modal 3 LOGIN EXPIRED -->
+		          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal3" class="modal fade">
+		              <div class="modal-dialog">
+		                  <div class="modal-content">
+		                      <div class="modal-header">
+		                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		                          <h4 class="modal-title">Wizard Alert</h4>
+                                  <a data-toggle="modal" id="modalExpiration" href="login.html#myModal3"></a>
+		                      </div>
+                               <div class="modal-body" id="bodyAlertMessageBox">
+		                          <h4 class="modal-dialog" id="boxMessageModal"></h4>
+								
+		                      </div>
+		                      <div class="modal-footer" id="footerModalSessionExpired">
+		                          <button data-dismiss="modal" class="btn btn-default" type="button" id="BtnExpirationModal">OK</button>
+								
+		                      </div>
+		                      
+		                  </div>
+		              </div>
+		          </div>
+		          <!-- modal -->
+                  
+                  
+                  
+                  
+                  
+                  
+		
 	  	</div>
 	  </div>
 
     <!-- js placed at the end of the document so the pages load faster -->
-    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery-1.11.1.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/login.js"></script>
+    <script src="assets/js/TeamFunctions/login.js"></script>
 
     <!--BACKSTRETCH-->
     <!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
@@ -97,6 +160,24 @@
     <script>
         $.backstretch("assets/img/login-bg.jpg", {speed: 500});
     </script>
+    
+    
+    <!-- OPEN MODAL WINDOWS SESSION EXPIRED -->
+    
+    <?php
+
+	if(isset($_GET['ExpiredSession'])){
+		
+		?>
+        	<script>
+				$('#boxMessageModal').html("Session expired, login again");
+				$('#modalExpiration').click();
+		    </script>
+        
+		<?php
+    }
+
+?>
 
 
   </body>

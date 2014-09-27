@@ -2360,3 +2360,63 @@ ul.sidebar-menu li ul.sub li a:hover{
 	display: none;
 }
 
+#footerModalSessionExpired{
+	text-align: center;
+}
+
+#bodyAlertMessageBox{
+	text-align: center;
+}
+
+#RequestBox{
+	background-color: #fff;
+}
+
+#RequestPasswordTitle{
+	text-align:center;
+	text-shadow: -1px 1px 1px rgba(170,170,170,1);
+	
+}
+
+#boxImgRequest{
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	-webkit-box-align: center;
+	
+	display: -moz-box;
+	-moz-box-orient: horizontal;
+	-moz-box-align: center;
+	
+	display: -ms-flexbox;
+	flex-direction: row;
+	-ms-box-align: center;
+}
+
+#imgBox{
+		display: -webkit-box;
+		-webkit-box-align: center;
+		
+		display: -moz-box;
+		-moz-box-align: center;
+		
+		display: -ms-flexbox;
+		-ms-box-align: center;
+	
+	width: 90px;
+	height: 100px;
+	border: 1px inset white;
+	
+}
+
+#imgBox img{
+	width: 85px;
+	height: 95px;
+	margin-left: 2px;
+	
+}
+
+#inputFileRequest{
+	margin-left: 10px;
+}
+
+
