@@ -265,3 +265,5 @@ class User
 
 //$DeleteUser = new User();
 //$DeleteUser ->Delete_User(2,'tu@gmail.com','ju333an.jpg',1,1345);
+
+?>

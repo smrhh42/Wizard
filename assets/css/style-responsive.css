@@ -4,6 +4,14 @@
         margin-bottom: 40px;
     }
 
+	#sidebar{
+        height: auto;
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+        z-index: 1001;
+		display: inline;	
+	}
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
@@ -22,8 +30,16 @@
 
     .header {
         position: absolute;
+		min-height: 55px;
     }
-
+	
+	.sidebar-toggle-box {
+		float: left;
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-top: 20px;
+		display: inline;
+	}
     /*sidebar*/
 
     #sidebar {
@@ -32,6 +48,7 @@
         position: absolute;
         width: 100%;
         z-index: 1001;
+		display: inline;
     }
 
 
@@ -230,10 +247,22 @@
 }
 #logoHeader2{
 	display: block;
+	margin-top: 5px;
 }
-
-	
-
+#dropdown-task{
+	margin-left: -50px;
+	margin-top: 5px;
+}
+#notify-arrow-task{
+	left: 137px
+}
+#dropdown-inbox{
+	margin-top: 5px;
+}
+#MenuUser{
+	margin-top: 7px;
+	left: -25px;
+}	
 }
 
 
@@ -263,7 +292,7 @@
         border-color:#ccc ;
     }
 	  #userMenu{
-	  position: absolute;
+	  position: relative;
 	  right: 10px;
 	
 	margin-right: 0px;
@@ -275,6 +304,7 @@
 }
 #logoHeader1{
 	display: none;
+	margin-top: 5px;
 }
 #logoHeader2{
 	display: block;
@@ -282,7 +312,7 @@
 
 #top_menu{
 	display: block;
-	margin-left: 30px;
+	margin-left: 0px;
 }
 
 #boxImgRequest{
@@ -297,7 +327,20 @@
 #inputFileRequest{
 	margin-left: 0px;
 }
-
+#dropdown-task{
+	margin-left: -50px;
+	margin-top: 5px;
+}
+#notify-arrow-task{
+	left: 137px
+}
+#dropdown-inbox{
+	margin-top: 5px;
+}
+#MenuUser{
+	margin-top: 7px;
+	left: -50px;
+}
 }
 
 @media (max-width: 400px) {
@@ -320,7 +363,7 @@
     display: none;
   }
   #userMenu{
-	  position: absolute;
+	  position: relative;
 	  right: 10px;
 	
 	margin-right: 0px;
@@ -347,6 +390,16 @@
 }
 #inputFileRequest{
 	margin-left: 0px;
+}
+#dropdown-task{
+	margin-left: -50px;
+	margin-top: 5px;
+}
+#notify-arrow-task{
+	left: 137px
+}
+#dropdown-inbox{
+	margin-top: 5px;
 }
 }
 
@@ -411,6 +464,7 @@
 }
 }
 
-
-
-
+.notify-row {
+    margin-top: 15px;
+    margin-left: 92px;
+}

@@ -2,51 +2,84 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Juan Huertas-Fernandez">
-    
-    <!-- TemplateBeginEditable name="doctitle" -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>Wizard</title>
-    <!-- TemplateEndEditable -->
-   
-    <link href="../assets/img/icon/logo.ico" rel="icon" type="image/x-icon"/>
-     <!-- Bootstrap core CSS -->
+    <link href="assets/img/icon/logo.ico" rel="icon" type="image/x-icon"/>
     <link href="assets/css/bootstrap.css" rel="stylesheet">
-    
-    <!--external css-->
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link href="assets/js/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />  
-    
-    <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
-
-    
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  <!-- TemplateBeginEditable name="head" -->
-  <!-- TemplateEndEditable -->
   </head>
 
   <body>
 
   <section id="container" >
-      <!-- **********************************************************************************************************************************************************
-      TOP BAR CONTENT & NOTIFICATIONS
-      *********************************************************************************************************************************************************** -->
       <!--header start-->
       <header class="header black-bg">
               <div class="sidebar-toggle-box">
                   <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
               </div>
             <!--logo start-->
-            <a href="http://www.temple.edu/" class="logo" target="_blank"><img src="assets/img/logoHeader.png" alt="logo Temple" id="logoHeader1"><img src="assets/img/logoHeader2.png" alt="logo Temple" id="logoHeader2"></a>
+            <a href="http://localhost/index.php" class="logo" target="_self"><img src="assets/img/fakelogo.png" alt="logo Temple" id="logoHeader1"><img src="assets/img/logoHeader2.png" alt="logo Temple" id="logoHeader2"></a>
             <!--logo end-->
-            <div class="nav notify-row" id="top_menu">
-                <!--  notification start -->
+            
+			<!---Menu start-->
+
+			<!---Menu end-->
+            
+            <div class="top-menu">
+            	<ul class="nav pull-right top-menu" id="userMenu">
+                
+                  <!-- inbox dropdown start-->
+                    <li id="header_inbox_bar" class="dropdown">
+                        
+                            <a data-toggle="dropdown" class="dropdown-toggle linkUser" href="index.html#">
+                               <img src="assets/img/avatar.png" alt="avatar" />
+                            </a>
+                            
+
+                        <ul class="dropdown-menu boxMenuUser" id="MenuUser">
+                         
+									<li class="userLiMenu">
+										<a href="#">
+											<i class="fa fa-user"></i>
+											<span>Profile</span>
+										</a>
+									</li>
+									<li class="userLiMenu">
+										<a href="ajax/page_messages.html" class="ajax-link">
+											<i class="fa fa-envelope"></i>
+											<span>Messages</span>
+										</a>
+									</li>
+									
+									<li class="userLiMenu">
+										<a href="ajax/calendar.html" class="ajax-link">
+											<i class="fa fa-tasks"></i>
+											<span>Tasks</span>
+										</a>
+									</li>
+									
+									<li class="userLiMenu">
+										<a href="assets/PHP/functionLogin.php?logout">
+											<i class="fa fa-power-off"></i>
+											<span>Logout</span>
+										</a>
+									</li>
+					  </ul>
+                                
+                                
+                                
+                                
+                    </li> <!-- end dropdown -->
+                    <li id="UserNameTopHeader">Welcolme, Juanito </li>
+            	</ul>          
+            </div>
+			
+			
+			<!--  notification start -->
+			<div class="nav notify-row" id="top_menu">    
                 <ul class="nav top-menu">
                     <!-- settings start -->
                     <li class="dropdown">
@@ -54,8 +87,8 @@
                             <i class="fa fa-tasks"></i>
                             <span class="badge bg-theme">4</span>
                         </a>
-                        <ul class="dropdown-menu extended tasks-bar">
-                            <div class="notify-arrow notify-arrow-green"></div>
+                        <ul class="dropdown-menu extended tasks-bar" id="dropdown-task">
+                            <div class="notify-arrow notify-arrow-green" id="notify-arrow-task"></div>
                             <li>
                                 <p class="green">You have 4 pending tasks</p>
                             </li>
@@ -123,14 +156,14 @@
                             <i class="fa fa-envelope-o"></i>
                             <span class="badge bg-theme">5</span>
                         </a>
-                        <ul class="dropdown-menu extended inbox">
+                        <ul class="dropdown-menu extended inbox" id="dropdown-inbox">
                             <div class="notify-arrow notify-arrow-green"></div>
                             <li>
                                 <p class="green">You have 5 new messages</p>
                             </li>
                             <li>
                                 <a href="index.html#">
-                                    <span class="photo"><img alt="avatar" src="assets/img/ui-zac.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="assets/img/useravatar24.png"></span>
                                     <span class="subject">
                                     <span class="from">Zac Snider</span>
                                     <span class="time">Just now</span>
@@ -142,7 +175,7 @@
                             </li>
                             <li>
                                 <a href="index.html#">
-                                    <span class="photo"><img alt="avatar" src="assets/img/ui-divya.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="assets/img/useravatar24.png"></span>
                                     <span class="subject">
                                     <span class="from">Divya Manian</span>
                                     <span class="time">40 mins.</span>
@@ -154,7 +187,7 @@
                             </li>
                             <li>
                                 <a href="index.html#">
-                                    <span class="photo"><img alt="avatar" src="assets/img/ui-danro.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="assets/img/useravatar24.png"></span>
                                     <span class="subject">
                                     <span class="from">Dan Rogers</span>
                                     <span class="time">2 hrs.</span>
@@ -166,7 +199,7 @@
                             </li>
                             <li>
                                 <a href="index.html#">
-                                    <span class="photo"><img alt="avatar" src="assets/img/ui-sherman.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="assets/img/useravatar24.png"></span>
                                     <span class="subject">
                                     <span class="from">Dj Sherman</span>
                                     <span class="time">4 hrs.</span>
@@ -186,61 +219,6 @@
                     
                 </ul>
                 <!--  notification end -->
-            </div>
-            
-            <div class="top-menu">
-            	<ul class="nav pull-right top-menu" id="userMenu">
-                
-                  <!-- inbox dropdown start-->
-                    <li id="header_inbox_bar" class="dropdown">
-                    	
-                        
-                            <a data-toggle="dropdown" class="dropdown-toggle linkUser" href="index.html#">
-                               <img src="assets/img/juan.png" alt="avatar" />
-                            </a>
-                            
-                          
-                        
-                        
-                        <ul class="dropdown-menu boxMenuUser">
-                         
-									<li class="userLiMenu">
-										<a href="#">
-											<i class="fa fa-user"></i>
-											<span>Profile</span>
-										</a>
-									</li>
-									<li class="userLiMenu">
-										<a href="ajax/page_messages.html" class="ajax-link">
-											<i class="fa fa-envelope"></i>
-											<span>Messages</span>
-										</a>
-									</li>
-									
-									<li class="userLiMenu">
-										<a href="ajax/calendar.html" class="ajax-link">
-											<i class="fa fa-tasks"></i>
-											<span>Tasks</span>
-										</a>
-									</li>
-									
-									<li class="userLiMenu">
-										<a href="../assets/PHP/functionLogin.php?logout">
-											<i class="fa fa-power-off"></i>
-											<span>Logout</span>
-										</a>
-									</li>
-					  </ul>
-                                
-                                
-                                
-                                
-                    </li> <!-- end dropdown -->
-                    <li id="UserNameTopHeader">Welcolme, Juanito </li>
-            	</ul>
-                 
-        
-                  
             </div>
             
              
@@ -322,47 +300,4 @@
           </div>
       </aside>
       <!--sidebar end-->
-      
-      <!-- **********************************************************************************************************************************************************
-      MAIN CONTENT
-      *********************************************************************************************************************************************************** -->
-      <!--main content start-->
-      <section id="main-content"><!-- TemplateBeginEditable name="Content Session wrapper" -->
-      <section class="wrapper">
-        <!-- HERE IS WHERE IS NECESSARY TO INCLUDE THE CONTENT -->
-      </section>
-      <!-- TemplateEndEditable --></section>
-
-      <!--main content end-->
-      <!--footer start-->
-      <footer class="site-footer">
-          <div class="text-center">
-              2014 - Wizard
-              <a href="index.html#" class="go-top">
-                  <i class="fa fa-angle-up"></i>
-              </a>
-          </div>
-    </footer>
-      <!--footer end-->
-  </section>
-
-      <!-- js placed at the end of the document so the pages load faster -->
-    <script src="assets/js/jquery-1.11.1.js"></script>
-    <script src="assets/js/jquery-ui-1.9.2.custom.min.js"></script>
-	<script src="assets/js/fullcalendar/fullcalendar.min.js"></script>    
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
-    <script src="assets/js/jquery.scrollTo.min.js"></script>
-    <script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
-
-
-    <!--common script for all pages-->
-    <script src="assets/js/common-scripts.js"></script>
-
-    <!--script for this page-->
-	<script src="assets/js/calendar-conf-events.js"></script> 
-     
-  
-
-  </body>
-</html>
+	  <a href="#" class="scrollToTop"></a>
