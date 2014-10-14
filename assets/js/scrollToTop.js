@@ -1,4 +1,4 @@
-/*	jQuery function scroll to top
+/*	jQuery function scroll to top + hover logo change
  *	author: Connor Tang
  */
 $(document).ready(function(){
@@ -15,4 +15,7 @@ $(document).ready(function(){
 		$('html, body').animate({scrollTop : 0},800);
 		return false;
 	});
+	
+	//logo change on hover
+	
 });

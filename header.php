@@ -22,7 +22,7 @@
                   <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
               </div>
             <!--logo start-->
-            <a href="http://localhost/index.php" class="logo" target="_self"><img src="assets/img/fakelogo.png" alt="logo Temple" id="logoHeader1"><img src="assets/img/logoHeader2.png" alt="logo Temple" id="logoHeader2"></a>
+            <a href="http://localhost/index.php" class="logo" target="_self"><img src="assets/img/logo.png" onmouseover="this.src='assets/img/logohover.png'" onmouseout="this.src='assets/img/logo.png'" alt="logo Temple" id="logoHeader1"><img src="assets/img/logoHeader2.png" alt="logo Temple" id="logoHeader2"></a>
             <!--logo end-->
             
 			<!---Menu start-->
