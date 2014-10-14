@@ -1,5 +1,4 @@
-/*
- *	jQuery function scroll to top
+/*	jQuery function scroll to top
  *	author: Connor Tang
  */
 $(document).ready(function(){

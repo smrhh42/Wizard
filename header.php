@@ -1,3 +1,4 @@
+<!--Modified by Connor Tang, 10,13,2014-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -25,7 +26,36 @@
             <!--logo end-->
             
 			<!---Menu start-->
-
+			<div id='cssmenu'>
+				<ul>
+				   <li>
+					<a href='#'><span>Programs</span></a>
+					<ul>
+						<li><a href='#'><span>Graduate</span></a></li>
+						<li><a href='#'><span>International</span></a></li>
+					</ul>
+				   </li>
+				   <li><a href='#'><span>Forms</span></a>
+					<ul>
+						<li><a href='#'><span>Display Form</span></a></li>
+						<li><a href='#'><span>Create Form</span></a></li>
+						<li><a href='#'><span>Upload PDF</span></a></li>
+					</ul>				   
+				   </li>
+				   <li><a href='#'><span>Organizer</span></a>
+					<ul>
+						<li><a href='#'><span>Calendar</span></a></li>
+						<li><a href='#'><span>Todo List</span></a></li>
+					</ul>				   
+				   </li>
+				   <li class='last'><a href='#'><span>Administrative</span></a>
+					<ul>
+						<li><a href='#'><span>Students</span></a></li>
+						<li><a href='#'><span>Faculties</span></a></li>
+					</ul>				   
+				   </li>
+				</ul>
+			</div>
 			<!---Menu end-->
             
             <div class="top-menu">
