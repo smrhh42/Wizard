@@ -103,7 +103,7 @@
                                 
                                 
                     </li> <!-- end dropdown -->
-                    <li id="UserNameTopHeader">Welcolme, Juanito </li>
+                    <li id="UserNameTopHeader">UserName</li>
             	</ul>          
             </div>
 			
