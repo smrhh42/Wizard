@@ -11,7 +11,7 @@ if($_SESSION['UserObject'] == ""){
 			$_SESSION['Time'] = time();
 			
 			$UserObject = $_SESSION['UserObject'];
-			print_r($UserObject);
+			//print_r($UserObject);
 		}else{
 			header("Location: Login.php?ExpiredSession");
 		}
