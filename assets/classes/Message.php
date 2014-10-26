@@ -1,5 +1,5 @@
 <?php
-
+require_once(dirname(__FILE__)).'/../core/init.php';
 /*
 
 Table "Message"
@@ -14,7 +14,7 @@ Time_Message
 
 */
 
-require_once('Connection.php');
+
 
 
 class Message
@@ -84,5 +84,3 @@ class Message
 	
 	
 } // End of my Users Class
-
-?>
