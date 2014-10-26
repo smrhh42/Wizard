@@ -1,3 +1,25 @@
+<?php
+include_once 'assets/core/init.php';
+session_start();
+
+if($_SESSION['UserObject'] == ""){
+	header("Location: Login.php");
+}else{
+	
+		if(time() - $_SESSION['Time'] < 1800){
+			// Regenerate the time other 30 minutes
+			$_SESSION['Time'] = time();
+			
+			$UserObject = $_SESSION['UserObject'];
+			print_r($UserObject);
+		}else{
+			header("Location: Login.php?ExpiredSession");
+		}
+}
+
+
+?>
+
 <!--Modified by Connor Tang, 10,13,2014-->
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +44,7 @@
                   <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
               </div>
             <!--logo start-->
-            <a href="javascript:window.location = '/';" class="logo" target="_self"><img src="assets/img/logo.png" onmouseover="this.src='assets/img/logohover.png'" onmouseout="this.src='assets/img/logo.png'" alt="logo Temple" id="logoHeader1"><img src="assets/img/logoHeader2.png" alt="logo Temple" id="logoHeader2"></a>
+            <a href="index.php" class="logo" target="_self"><img src="assets/img/logo.png" onmouseover="this.src='assets/img/logohover.png'" onmouseout="this.src='assets/img/logo.png'" alt="logo Temple" id="logoHeader1"><img src="assets/img/logoHeader2.png" alt="logo Temple" id="logoHeader2"></a>
             <!--logo end-->
             
 			<!---Menu start-->
@@ -31,27 +53,27 @@
 				   <li>
 					<a href='#'><span>Programs</span></a>
 					<ul>
-						<li><a href='#'><span>Graduate</span></a></li>
-						<li><a href='#'><span>International</span></a></li>
+						<li><a href='Graduate_Programs.php'><span>Graduate</span></a></li>
+						<li><a href='Undegrad_Programs.php'><span>International</span></a></li>
 					</ul>
 				   </li>
 				   <li><a href='#'><span>Forms</span></a>
 					<ul>
-						<li><a href='#'><span>Display Form</span></a></li>
-						<li><a href='#'><span>Create Form</span></a></li>
-						<li><a href='#'><span>Upload PDF</span></a></li>
+						<li><a href='Form_display.php'><span>Display Form</span></a></li>
+						<li><a href='Form_Create.php'><span>Create Form</span></a></li>
+						<li><a href='Form_PDF.php'><span>Upload PDF</span></a></li>
 					</ul>				   
 				   </li>
 				   <li><a href='#'><span>Organizer</span></a>
 					<ul>
-						<li><a href='#'><span>Calendar</span></a></li>
-						<li><a href='#'><span>Todo List</span></a></li>
+						<li><a href='Calendar.php'><span>Calendar</span></a></li>
+						<li><a href='Todo_list.php'><span>Todo List</span></a></li>
 					</ul>				   
 				   </li>
 				   <li class='last'><a href='#'><span>Administrative</span></a>
 					<ul>
-						<li><a href='#'><span>Students</span></a></li>
-						<li><a href='#'><span>Faculties</span></a></li>
+						<li><a href='Students.php'><span>Students</span></a></li>
+						<li><a href='Faculties.php'><span>Faculties</span></a></li>
 					</ul>				   
 				   </li>
 				</ul>
@@ -64,7 +86,7 @@
                   <!-- inbox dropdown start-->
                     <li id="header_inbox_bar" class="dropdown">
                         
-                            <a data-toggle="dropdown" class="dropdown-toggle linkUser" href="index.html#">
+                            <a data-toggle="dropdown" class="dropdown-toggle linkUser" href="index.php#">
                                <img src="assets/img/avatar.png" alt="avatar" />
                             </a>
                             
@@ -92,7 +114,7 @@
 									</li>
 									
 									<li class="userLiMenu">
-										<a href="assets/PHP/functionLogin.php?logout">
+										<a href="assets/php/functionLogin.php?logout">
 											<i class="fa fa-power-off"></i>
 											<span>Logout</span>
 										</a>
@@ -103,7 +125,7 @@
                                 
                                 
                     </li> <!-- end dropdown -->
-                    <li id="UserNameTopHeader">UserName</li>
+                    <li id="UserNameTopHeader">Welcome, <?php echo $UserObject['Name']; ?> </li>
             	</ul>          
             </div>
 			

@@ -1,6 +1,6 @@
 <?php
 
-require_once '../common.php';
+require_once(dirname(__FILE__)).'/../core/init.php';
 
 
 class ExportExcel{
@@ -736,7 +736,6 @@ class ExportExcel{
 
 } // End updateDatabase
 }
-
 ?>
 			
 	

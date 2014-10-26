@@ -6,54 +6,34 @@ include('header.php');
       MAIN CONTENT
       *********************************************************************************************************************************************************** -->
       <!--main content start-->
-      <section id="main-content"><!-- InstanceBeginEditable name="Content Session wrapper" -->
-      <section class="wrapper">
+      <section id="main-content">
+<section class="wrapper">
     
     
-    			<!-- INCLUDE THE CODE HERE -->
+   			  <!-- INCLUDE THE CODE HERE -->
     
     
     
     
     
-   						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-
+					   <h1> This is my index page (Home page)</h1>
     
     
         
       </section>
-      </section>
+</section>
 
       <!--main content end-->
+      <!--footer start-->
+      <footer class="site-footer">
+          <div class="text-center">
+              2014 - Wizard
+              <a href="index.html#" class="go-top">
+                  <i class="fa fa-angle-up"></i>
+              </a>
+          </div>
+    </footer>
+      <!--footer end-->
   </section>
 
       <!-- js placed at the end of the document so the pages load faster -->
@@ -63,7 +43,7 @@ include('header.php');
     <script src="assets/js/bootstrap.min.js"></script>
     <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
     <script src="assets/js/jquery.scrollTo.min.js"></script>
-	<script src="assets/js/scrollToTop.js"></script>
+    <script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
 
 
     <!--common script for all pages-->
@@ -75,4 +55,4 @@ include('header.php');
   
 
   </body>
-<!-- InstanceEnd --></html>
+</html>
