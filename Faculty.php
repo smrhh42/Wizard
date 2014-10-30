@@ -11,7 +11,7 @@ include('header.php');
       <!-- HERE IS WHERE IS NECESSARY TO INCLUDE THE CONTENT -->
         
         
-      <h1>This is my faculties page</h1>
+      <h1>This is my faculty page</h1>
         
       </section>
 
