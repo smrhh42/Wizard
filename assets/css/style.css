@@ -2276,7 +2276,7 @@ ul.sidebar-menu li ul.sub li a:hover{
 
    padding: 0px;
     margin-left: 10px;
-	border: 1px outset #800;
+	/* border: 1px outset #800; */
 	width: 45px;
 	height: 40px;
 	margin-top: 10px;
@@ -2401,3 +2401,33 @@ ul.sidebar-menu li ul.sub li a:hover{
 	background: url('../img/icon/Scroll.png');
 	z-index: 10002;
 }
+
+
+#loading{
+	
+	
+	display: none;
+
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	
+
+	-moz-box-align: center;
+	-moz-box-pack: center;
+	
+	-ms-flex-pack:center;
+	-ms-flex-align:center;
+	
+	background-color: rgba(0,0,0,0.2);
+	position:absolute;
+	top:0;
+	bottom:0;
+	left: 0;
+	right:0;
+
+	
+}
+
+
+
+

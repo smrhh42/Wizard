@@ -1,21 +1,18 @@
 <?php
 include('header.php');
 ?>
-
+      
       <!-- **********************************************************************************************************************************************************
       MAIN CONTENT
       *********************************************************************************************************************************************************** -->
       <!--main content start-->
-      <section id="main-content"><!-- InstanceBeginEditable name="Content Session wrapper" -->
-      <section class="wrapper">
-        <!-- HERE IS WHERE IS NECESSARY TO INCLUDE THE CONTENT -->
+      <section id="main-content">
+<section class="wrapper">
+      <!-- HERE IS WHERE IS NECESSARY TO INCLUDE THE CONTENT -->
         
-        <h1> This is my page to display forms</h1>
-      
-	  </section>
+      <h1> This is my page to display forms</h1>
       </section>
 
-      <!--main content end-->
   </section>
 
       <!-- js placed at the end of the document so the pages load faster -->
@@ -36,4 +33,4 @@ include('header.php');
   
 
   </body>
-<!-- InstanceEnd --></html>
+</html>

@@ -6,54 +6,22 @@ include('header.php');
       MAIN CONTENT
       *********************************************************************************************************************************************************** -->
       <!--main content start-->
-      <section id="main-content"><!-- InstanceBeginEditable name="Content Session wrapper" -->
-      <section class="wrapper">
+      <section id="main-content">
+<section class="wrapper">
     
     
-    			<!-- INCLUDE THE CODE HERE -->
+   			  <!-- INCLUDE THE CODE HERE -->
     
     
     
     
     
-   						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-						 <h1> This is my index page (Home page)</h1>
-
+					   <h1> This is my index page (Home page)</h1>
     
     
         
       </section>
-      </section>
 
-      <!--main content end-->
   </section>
 
       <!-- js placed at the end of the document so the pages load faster -->
@@ -75,4 +43,4 @@ include('header.php');
   
 
   </body>
-<!-- InstanceEnd --></html>
+</html>
