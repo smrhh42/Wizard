@@ -18,9 +18,6 @@ class Ldap
 		    /// Bind Connection SSL
 			$bind=ldap_bind($this->ds,Config::get('ldap/dn'),Config::get('ldap/ldap_pss'));
 		
-			//echo $ds;
-			//echo '<br>';
-			//echo $bind;
 			
 		}
 	
@@ -52,10 +49,7 @@ class Ldap
 			$UserObject['LastName'] 	= $info[0]['sn'][0];
 			$UserObject['TU_ID'] 		= $info[0]['templeedutuid'][0];
 			$UserObject['dn'] 			= $info[0]['dn'];
-			
-			
-			//print_r($UserObject);
-			//$User_Object_Json = json_encode($UserObject);
+		
 			if($NumberEntries == 0){
 		
 				return 0; // return 0 because the system do not finde any user
@@ -91,4 +85,6 @@ class Ldap
 		
 		
 	}	 // End ldap class
+	
+	
 	
