@@ -1,6 +1,6 @@
 <?php
 include_once 'assets/core/init.php';
-session_start();
+/*session_start();
 
 if($_SESSION['UserObject'] == ""){
 	header("Location: Login.php");
@@ -15,7 +15,7 @@ if($_SESSION['UserObject'] == ""){
 		}else{
 			header("Location: Login.php?ExpiredSession");
 		}
-}
+}*/
 
 
 ?>
@@ -125,7 +125,7 @@ if($_SESSION['UserObject'] == ""){
                                 
                                 
                     </li> <!-- end dropdown -->
-                    <li id="UserNameTopHeader">Welcome, <?php echo $UserObject['Name']; ?> </li>
+                  <!--  <li id="UserNameTopHeader">Welcome, <?php echo $UserObject['Name']; ?> </li> -->
             	</ul>          
             </div>
 			
