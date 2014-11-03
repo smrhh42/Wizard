@@ -66,7 +66,7 @@ function toggleDiv(divId) {
                         <tr>
                             <td>
                                 <ul>
-                                    <li>Student Name: </li>
+                                    <li>Student Name: 
                                     <li>Picture: </li>
                                     <li>Nickname: </li>
                                     <li>TUid: </li>
@@ -123,6 +123,12 @@ function toggleDiv(divId) {
                     <div id="list-1-tabs-1">
                         <p>The current classes section.</p>
                         <p>The classes a student is currently taking will be added here.</p>
+						<form name="CurrentClassesForm">
+							<label>Course: </label>
+							<select name="Courses">
+							</select>
+							<button id="addcourse">Add another course</button>
+						</form>
                     </div>
                     <div id="list-1-tabs-2">
                         <p>The completed section.</p>
