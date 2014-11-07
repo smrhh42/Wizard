@@ -32,7 +32,7 @@ include('header.php');
 
             </script>
 
-            <script>
+            <script type="text/javascript">
 			$(document).ready(function() {
 				$("#collapse-1").click(function() {
 					jAlert("The button worked!");
@@ -56,7 +56,7 @@ function toggleDiv(divId) {
 </script>-->
         </head>
         <body>
-			<h1>DARS</h1>
+			<h1>Graduate Degree Audit</h1>
             <table class="tg">
                 <tr>
                     <th class="tg-031e"></th>
@@ -123,6 +123,12 @@ function toggleDiv(divId) {
                     <div id="list-1-tabs-1">
                         <p>The current classes section.</p>
                         <p>The classes a student is currently taking will be added here.</p>
+						<form name="CurrentClassesForm">
+							<label>Course: </label>
+							<select name="Courses">
+							</select>
+							<button id="addcourse">Add another course</button>
+						</form>
                     </div>
                     <div id="list-1-tabs-2">
                         <p>The completed section.</p>
