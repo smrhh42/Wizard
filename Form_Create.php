@@ -1,15 +1,12 @@
 <?php
 include('header.php');
 ?>
-      <!-- **********************************************************************************************************************************************************
-      MAIN CONTENT
-      *********************************************************************************************************************************************************** -->
-      <!--main content start-->
-      <section id="main-content">
-            <section class="wrapper">
-                  <!-- HERE IS WHERE IS NECESSARY TO INCLUDE THE CONTENT -->
-                    
-                   <div class="bodyForm">
+<section id="main-content">
+	<section class="wrapper">
+    <!--main content start-->
+
+    
+      <div class="bodyForm">
                    		
                         <div class="leftBodyForm">
                         	 	<div class="formContainer">
@@ -140,29 +137,18 @@ include('header.php');
                     
                     
                    </div>
-                    
-                  
-                  
-                  
-                  
-            </section>
-		</section>
+    
+    
+    
+    
+    
 
-          <!--main content end-->
-          <!--footer start-->
-           <footer class="site-footer">
-           	 <a href="index.html#" class="go-top">
-                    <i class="fa fa-angle-up"></i>
-                </a>
-            
-            </footer>
-        
-      <!--footer end-->
-  </section>
+	<!--main content end-->
+	</section>
+</section>	
 
 
-
-		
+	
         <!-- /////////////////////////////////////////////////// -->
         <!--------------   MODAL WINDOWS TO DISPLAY MESSAGES ------>
         <!-- /////////////////////////////////////////////////// -->
@@ -234,7 +220,7 @@ include('header.php');
 
 
 				  <!-- /////////////////////////////////////////////////// -->
-                <!--------------   MODAL WINDOWS TO DISPLAY MESSAGES ------>
+                <!--------------   MODAL WINDOWS TO DISPLAY LOADING ICON ------>
                 <!-- /////////////////////////////////////////////////// -->
 
  				<div class="modal-body" id="loading"><img src="assets/img/ajax-loader.gif" /></div>  
@@ -256,25 +242,9 @@ include('header.php');
                </div> 
 
 
-			
 
-      <!-- js placed at the end of the document so the pages load faster -->
-    <script src="assets/js/jquery-1.11.1.js"></script>
-    <script src="assets/js/jquery-ui-1.9.2.custom.min.js"></script>  
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
-    <script src="assets/js/jquery.scrollTo.min.js"></script>
-    <script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
-	<script src="assets/js/jquery-form.js"></script>
+	
+	<?php	include('include.php');	?>
 
-    <!--common script for all pages-->
-    <script src="assets/js/common-scripts.js"></script>
-
-	<!-- javascript file to control forms pages activities -->
-    <script src="assets/js/Wizard_Functions/form.js"></script>
-   
-     
-  
-
-  </body>
-</html>
+	<!--script for this page-->
+	 <script src="assets/js/Wizard_Functions/form.js"></script>

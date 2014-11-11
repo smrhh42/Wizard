@@ -232,4 +232,41 @@ if(isset($_POST['DeleteFormType'])){
 
 
 
+
+
+
+
+
+if(isset($_POST['DisplayStudents'])){
+		
+		$results = array(); // Inicialize array to store all json information to send back
+	
+		$Get_Students = new Students();
+		$Result_GetStudents = $Get_Students->get_Students();
+	
+		if($Result_GetStudents != 0){
+			
+				$results = $Result_GetStudents;
+				$results['Status'] = "success";
+				
+				echo json_encode($results);
+				
+		}else{
+				$results['Status'] = "error";	
+				print json_encode($results);	
+		}
+		
+		
+} // End DisplayStudents
+	
+	
+	
+	
+
+
+
+
+
+
+
 ?>

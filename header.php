@@ -1,7 +1,22 @@
 <?php
-
 include_once 'assets/core/init.php';
-//include 'assets/core/session.php';
+// session_start();
+
+// if($_SESSION['UserObject'] == ""){
+	// header("Location: Login.php");
+// }else{
+	
+		// if(time() - $_SESSION['Time'] < 1800){
+			// Regenerate the time other 30 minutes
+			// $_SESSION['Time'] = time();
+			
+			// $UserObject = $_SESSION['UserObject'];
+			// print_r($UserObject);
+		// }else{
+			// header("Location: Login.php?ExpiredSession");
+		// }
+// }
+
 
 ?>
 
@@ -110,7 +125,7 @@ include_once 'assets/core/init.php';
                                 
                                 
                     </li> <!-- end dropdown -->
-                    <li id="UserNameTopHeader">Welcome, <?php echo $UserObject['Name']; ?> </li>
+                    <li id="UserNameTopHeader">Welcome, <?php //echo $UserObject['Name']; ?> </li>
             	</ul>          
             </div>
 			
@@ -337,4 +352,4 @@ include_once 'assets/core/init.php';
           </div>
       </aside>
       <!--sidebar end-->
-	  <a href="#" class="scrollToTop"></a>
+	  <a href="#" class="scrollToTop"></a>	  

@@ -1,6 +1,6 @@
 <?php
-require_once(dirname(__FILE__)).'/../core/init.php';
 
+require_once(dirname(__FILE__)).'/../core/init.php';
 /*
 TABLE "Observations"
 

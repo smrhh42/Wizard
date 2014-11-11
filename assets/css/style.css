@@ -22,6 +22,13 @@ flex-direction: column, row;
  */
 
 /* BASIC THEME CONFIGURATION */
+
+html,body{height:100%;}
+
+
+.container-fluid,
+.row-fluid { height: inherit; }
+
 body {
     color: #500;
 	background: #f2f2f2;
@@ -414,6 +421,7 @@ ul.sidebar-menu li a.active i {
 /* MAIN CONTENT CONFIGURATION */
 #main-content {
 	background-color: #f7f7f7;
+	min-height: 100%;
 }
 
 .header{
@@ -442,7 +450,7 @@ ul.sidebar-menu li a.active i {
     padding-bottom: 15px;
     padding-top: 0px;
     width: 100%;
-	min-height:580px;
+	min-height:100%;
 	background-image:url(../img/section_background.png);
 	background-size:contain;
 	background-repeat:no-repeat;
@@ -2912,6 +2920,12 @@ ul.sidebar-menu li ul.sub li a:hover{
 	display: -webkit-box;
 	-webkit-box-orient: horizontal;
 	
+	display: -moz-box;
+	-moz-box-orient: horizontal;
+	
+	display: -ms-flexbox;
+	flex-direction: row;
+	
 	margin: 5px;
 	
 }
@@ -2930,6 +2944,14 @@ ul.sidebar-menu li ul.sub li a:hover{
 	-webkit-box-align: center;
 	-webkit-box-pack: center;
 	
+	display: -moz-box;
+	-moz-box-align: center;
+	-moz-box-pack: center;
+	
+	display: -ms-flexbox;
+	-ms-flex-pack:center;
+	-ms-flex-align:center;
+	
 	width: 20%;
 	font-size:18px;
 }
@@ -2944,5 +2966,200 @@ ul.sidebar-menu li ul.sub li a:hover{
 	margin-top: 5px;
 	margin-right: 5px;
 	
+}
+
+
+
+
+
+/* /////////////// UPDATE CONTAINER FORM ////////////////////////////// */
+
+
+
+.containerHorizontal {
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	
+	display: -moz-box;
+	-moz-box-orient: horizontal;
+	
+	display: -ms-flexbox;
+	flex-direction: row;
+	
+	height: 95%;
+	padding-top: 50px;
+}
+
+.leftPanel{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+
+	
+	display: -moz-box;
+	-moz-box-orient: vertical;
+	
+	display: -ms-flexbox;
+	flex-direction: column;
+	
+	
+	width: 50%;
+	border: 1px outset #e0e0e0;
+	margin: 2px;
+	padding: 2px;
+}
+
+.rightPanel{
+	width: 50%;
+	border: 1px outset #e0e0e0;
+	margin: 2px;
+	padding: 2px;
+	
+}
+
+.wizardRedBackground{
+	/* background-image:url(../img/header.png); */
+	background-color: #eaeaea;
+	color: #333;
+}
+
+.fill{
+	height: 100%;
+}
+
+
+.headerTable{
+	height: 100px;
+}
+
+
+.bodyTable{
+	display: -webkit-box;
+	-webkit-box-flex:1;
+	
+	display: -moz-box;
+	-moz-box-flex: 1;
+	
+	display: -ms-flexbox;
+	-ms-flex:1;
+}
+
+
+
+
+
+
+/* /////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////    BOX UPDATE FORM    //////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////// */
+
+.uploadCSVbox{
+	padding: 10px;
+	border: 1px outset #e7e7e7;
+	border-radius: 5px;
+}
+.containerForm{
+	padding:2px;
+	border: 1px inset #e7e7e7;
+	border-radius: 5px;
+	
+}
+
+.lineForm{
+	margin-bottom: 10px;
+}
+
+.line1Form{
+	padding: 3px;
+}
+
+.line2Form{
+	text-align:center;
+	padding: 3px;
+}
+
+#updateStudentBtn{
+	width: 50%;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+.hrUpdateCSV{
+	padding: ;
+	margin: 0;
+}
+
+
+.lineHeader{
+		display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	
+	display: -moz-box;
+	-moz-box-orient: horizontal;
+	
+	display: -ms-flexbox;
+	flex-direction: row;
+	border-bottom: 2px ridge #e7e7e7;
+	
+}
+
+
+.lineHeader2{
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	-webkit-box-align: center;
+	
+	display: -moz-box;
+	-moz-box-orient: horizontal;
+	
+	display: -ms-flexbox;
+	flex-direction: row;
+	border-bottom: 1px dashed gray;
+	height: 30px;
+}
+
+
+
+.blockName{
+	
+	display: -webkit-box;
+	-webkit-box-flex:1;
+	
+	display: -moz-box;
+	-moz-box-flex: 1;
+	
+	display: -ms-flexbox;
+	-ms-flex:1;
+	
+}
+
+.blockEmail{
+   width: 200px;
+}
+.tuidBlook{
+	width: 100px;
+}
+.Action_Blook{
+	text-align: -webkit-center;
+	width: 100px;
+}
+
+
+.Action_Blook button{
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+#bodyTableFull{
+	display: -webkit-box;
+	-webkit-box-flex:1;
+	-webkit-box-orient: vertical;
+	
+	display: -moz-box;
+	-moz-box-flex: 1;
+	-moz-box-orient: vertical;
+	
+	display: -ms-flexbox;
+	-ms-flex:1;
+	flex-direction: row;
+	overflow:scroll;
 }
 

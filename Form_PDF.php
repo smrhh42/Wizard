@@ -1,49 +1,100 @@
 <?php
 include('header.php');
 ?>
+
+
+   <section class="containerHorizontal">
+            
+            
+            
+            	 <div class="leftPanel">
+                 
+                 		<div class="headerTable">
+                        
+                          <h4 id="titleMemberTable">Temple members</h4>
+	                  	  	  <hr>
+                              
+                              <div class="lineHeader">
+                              
+                              	<div class="blockName"><i class="fa fa-user"></i> Name</div>
+                                <div class="hidden-phone blockEmail"><i class="fa fa-envelope"></i> Email</div>
+                                <div class="tuidBlook"><i class="fa fa-key"></i> TU-ID</div>
+                                <div class="Action_Blook"><i class="fa fa-key"></i> Action</div>
+                                
+                              </div> <!-- end lineHeader -->
+                       </div> <!-- headerTable -->
+                       
+                       
+                       <div class="bodyTable">
+                       
+                       	 <div id="bodyTableFull">
+                                      
+                                           
+                            </div>
+                       </div> <!-- end bodyTable -->
+               
+                    
+               </div> <!-- end leftPanel -->
+               
+              
+               <div class="rightPanel">
+               
+               
+               
+               </div><!-- end rightPanel -->
+            
+            
       
-      <!-- **********************************************************************************************************************************************************
-      MAIN CONTENT
-      *********************************************************************************************************************************************************** -->
-      <!--main content start-->
-      <section id="main-content">
-<section class="wrapper">
-      <!-- HERE IS WHERE IS NECESSARY TO INCLUDE THE CONTENT -->
-        
-      <h1>This is my page to update PDF forms</h1>
-      </section>
-</section>
-
-      <!--main content end-->
-      <!--footer start-->
-      <footer class="site-footer">
-          <div class="text-center">
-              2014 - Wizard
-              <a href="index.html#" class="go-top">
-                  <i class="fa fa-angle-up"></i>
-              </a>
-          </div>
-    </footer>
-      <!--footer end-->
-  </section>
-
-      <!-- js placed at the end of the document so the pages load faster -->
-    <script src="assets/js/jquery-1.11.1.js"></script>
-    <script src="assets/js/jquery-ui-1.9.2.custom.min.js"></script>
-	<script src="assets/js/fullcalendar/fullcalendar.min.js"></script>    
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
-    <script src="assets/js/jquery.scrollTo.min.js"></script>
-    <script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
+            </section>
+            
+            
+            
+                      
+        <!-- /////////////////////////////////////////////////// -->
+        <!--------------   MODAL WINDOWS TO DISPLAY MESSAGES ------>
+        <!-- /////////////////////////////////////////////////// -->
 
 
-    <!--common script for all pages-->
-    <script src="assets/js/common-scripts.js"></script>
+	 <!-- Modal Windows to display messages -->
+		          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal3" class="modal fade">
+		              <div class="modal-dialog">
+		                  <div class="modal-content">
+		                      <div class="modal-header">
+		                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		                          <h4 class="modal-title">Wizard Alert</h4>
+                                  <a data-toggle="modal" id="modalExpiration" href="login.html#myModal3"></a>
+		                      </div>
+                               <div class="modal-body" id="bodyAlertMessageBox">
+		                          <h4 class="modal-dialog" id="boxMessageModal"></h4>
+								
+		                      </div>
+		                      <div class="modal-footer" id="footerModalSessionExpired">
+		                          <button data-dismiss="modal" class="btn btn-default" type="button" id="BtnExpirationModal">OK</button>
+								
+		                      </div>
+		                      
+		                  </div>
+		              </div>
+		          </div>
+		          <!-- modal -->
+                
+                
+                <!-- /////////////////////////////////////////////////// -->
+                <!--------------   MODAL WINDOWS TO DISPLAY LOADING ICON ------>
+                <!-- /////////////////////////////////////////////////// -->
 
-    <!--script for this page-->
-	<script src="assets/js/calendar-conf-events.js"></script> 
-     
+ 				<div class="modal-body" id="loading"><img src="assets/img/ajax-loader.gif" /></div> 
+  
+  
+  
   
 
-  </body>
-</html>
+
+
+
+
+
+	<?php	include('include.php');	?>
+	
+	<!--script for this page-->
+	<script src="assets/js/Wizard_Functions/formUpdate.js"></script> 
