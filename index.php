@@ -1,6 +1,7 @@
 <?php
 include('header.php');
 ?>
+<<<<<<< HEAD
       
       <!-- **********************************************************************************************************************************************************
       MAIN CONTENT
@@ -44,3 +45,41 @@ include('header.php');
 
   </body>
 </html>
+=======
+<section id="main-content">
+	<section class="wrapper"> 
+	<!--main content start-->
+   	<!-- INCLUDE THE CODE HERE -->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<h1> This is the index page (Home page), and all code site here!</h1>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!--main content end-->
+	</section>
+</section>
+	
+	<?php	include('include.php');	?>
+
+	<!--script for this page-->
+	<script src=""></script> 
+>>>>>>> ce96d2af16b9624d5bd2bd8f7c8b4360638afe7f

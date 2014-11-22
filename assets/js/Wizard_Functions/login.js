@@ -118,15 +118,14 @@ $('#login_btn').click(function(){
 //////  THIS FUNCTION OPEN THE MODAL WINDOWS WHEN AJAX IS WORKING /////// 
 
 var displayLoginModal = function(){
-	$('#loading').css('display','-webkit-box');
-	$('#loading').css('display','-moz-box');
-	$('#loading').css('display','-ms-flexbox');	
+	$('#loading').show();
 }
 
 var hideLoginModal = function(){
-	$('#loading').css('display','none');
-	
+	$('#loading').hide();
 }
+
+
 
 
 

@@ -250,6 +250,12 @@
 
 }
 
+
+@media (max-width: 1000px) {
+	.blockCollege{
+		display: none;
+	}
+}
 @media (max-width: 1000px) {
 
     .header {
@@ -490,9 +496,37 @@
 	margin-top: 7px;
 	left: -25px;
 }	
+
+
+.tuidBlook{
+	display: none;
+}
 }
 
 
+@media (max-width: 800px) {
+.blockGPA{
+	display: none;
+}
+}
+
+@media (max-width: 700px) {
+.blockAcademicStatus{
+	display: none;
+}
+
+.AcademicColumn{
+	display: none;
+}
+}
+
+
+@media (max-width: 700px) {
+.lineStudentRecord{
+	-webkit-box-orient: vertical;
+}
+
+}
 
 @media (max-width: 480px) {
 
@@ -569,9 +603,14 @@
 	left: -50px;
 }
 
-	#cssmenu {
-		display: none;
-	}
+#cssmenu {
+	display: none;
+}
+	
+.blockEmail{
+	display: none;
+}
+	
 }
 
 @media (max-width: 400px) {

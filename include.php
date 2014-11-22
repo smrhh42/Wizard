@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <!-- js placed at the end of the document so the pages load faster -->
+=======
+ <!-- js placed at the end of the document so the pages load faster -->
+>>>>>>> ce96d2af16b9624d5bd2bd8f7c8b4360638afe7f
     <script src="assets/js/jquery-1.11.1.js"></script>
     <script src="assets/js/jquery-ui-1.9.2.custom.min.js"></script>
 	<script src="assets/js/fullcalendar/fullcalendar.min.js"></script>    
@@ -10,3 +14,8 @@
     <!--common script for all pages-->
     <script src="assets/js/common-scripts.js"></script>
      
+<<<<<<< HEAD
+=======
+	</body>
+</html>
+>>>>>>> ce96d2af16b9624d5bd2bd8f7c8b4360638afe7f
