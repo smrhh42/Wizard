@@ -1,24 +1,30 @@
 <?php
+/*
 include_once 'assets/core/init.php';
-// session_start();
+ session_start();
 
-// if($_SESSION['UserObject'] == ""){
-	// header("Location: Login.php");
-// }else{
+ if($_SESSION['UserObject'] == ""){
+	header("Location: Login.php");
+ }else{
 	
-		// if(time() - $_SESSION['Time'] < 1800){
-			// Regenerate the time other 30 minutes
-			// $_SESSION['Time'] = time();
+	   if(time() - $_SESSION['Time'] < 1800){
+		// Regenerate the time other 30 minutes
+		$_SESSION['Time'] = time();
+		$UserObject = $_SESSION['UserObject'];
 			
-			// $UserObject = $_SESSION['UserObject'];
-			// print_r($UserObject);
-		// }else{
-			// header("Location: Login.php?ExpiredSession");
-		// }
-// }
-
+		}else{
+			 header("Location: Login.php?ExpiredSession");
+		 }
+}
+*/
 
 ?>
+
+<script>
+	//// This is to store the user object into and javascript object to be use later on the javascript functions. 
+	var User_Info = <?php echo json_encode($UserObject) ?>;// don't use quotes
+
+</script>
 
 <!--Modified by Connor Tang, 10,13,2014-->
 <!DOCTYPE html>
@@ -29,6 +35,7 @@ include_once 'assets/core/init.php';
     <title>Wizard</title>
     <link href="assets/img/icon/logo.ico" rel="icon" type="image/x-icon"/>
     <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-datetimepicker.min.css" type="text/css" media="screen"/>
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link href="assets/js/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />  
     <link href="assets/css/style.css" rel="stylesheet">
@@ -57,16 +64,12 @@ include_once 'assets/core/init.php';
 						<li><a href='Undegrad_Programs.php'><span>International</span></a></li>
 					</ul>
 				   </li>
-				   <li><a href='#'><span>Forms</span></a>
-					<ul>
-						<li><a href='Form_display.php'><span>Display Form</span></a></li>
-						<li><a href='Form_Create.php'><span>Create Form</span></a></li>
-						<li><a href='Form_PDF.php'><span>Upload PDF</span></a></li>
-					</ul>				   
+				   <li><a href='Form_Create.php'><span>Forms</span></a>
+							   
 				   </li>
 				   <li><a href='#'><span>Organizer</span></a>
 					<ul>
-						<li><a href='Calendar.php'><span>Calendar</span></a></li>
+						<li><a href='calendar.php'><span>Calendar</span></a></li>
 						<li><a href='Todo_list.php'><span>Todo List</span></a></li>
 					</ul>				   
 				   </li>
@@ -125,7 +128,7 @@ include_once 'assets/core/init.php';
                                 
                                 
                     </li> <!-- end dropdown -->
-                    <li id="UserNameTopHeader">Welcome, <?php //echo $UserObject['Name']; ?> </li>
+                    <li id="UserNameTopHeader">Welcome, <?php echo $UserObject['Name']; ?> </li>
             	</ul>          
             </div>
 			

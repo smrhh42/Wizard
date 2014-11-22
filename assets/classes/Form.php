@@ -4,7 +4,7 @@ require_once(dirname(__FILE__)).'/../core/init.php';
 
 
 /*
-database FORM
+Table FORM
 
 
 Form_ID	
@@ -12,6 +12,19 @@ Form_Description
 Form_Date
 Form_Type_Id
 Form_Path
+
+
+*/
+
+
+/*
+Table FORM_STUDENT
+
+Form_Student_Id
+Form_Student_Description
+Form_Student_Path	
+Form_Student_Date	date
+Student_Id
 
 
 */
@@ -260,7 +273,93 @@ public function get_Forms_by_name_and_type($FormType,$FormName){
 		
 		
 		
+		public function Insert_Form_Student($Form_Student_Description,$Form_Student_Path,$Student_Id)
+		{
+			$Form_Student_Date = date('Y-m-d');
+		
+			
+			$query_Insert = $this->_db->prepare("INSERT INTO FORM_STUDENT
+													(Form_Student_Description,Form_Student_Path,Form_Student_Date,Student_Id) 
+													VALUES(?,?,?,?)");
+			$query_Insert->bindParam(1, $Form_Student_Description);
+			$query_Insert->bindParam(2, $Form_Student_Path);
+			$query_Insert->bindParam(3, $Form_Student_Date);
+			$query_Insert->bindParam(4, $Student_Id);
+			$query_Insert->execute();
+				
+			if($query_Insert->rowCount() == 0){
+					return 0; // 0 because error inserting new entity
+					//print 0;
+			}else{
+					return 1;  // 1 is because everything work properly.
+					//print 1;
+				}
+		} // End function insert User
+		
+		
+		
+		
+
+public function get_Forms_Students($Student_Id)
+		{
+			$query_GetForm = $this->_db->prepare("SELECT * FROM FORM_STUDENT WHERE Student_Id = ?");
+			$query_GetForm->bindParam(1,$Student_Id);
+			$query_GetForm->execute();
+			$Return = array();
+			$i = 0;
+			
+			if($query_GetForm->rowCount() != 0)
+				{	
+					
+					
+					while($resultGetType = $query_GetForm->fetch(PDO::FETCH_ASSOC)){
+						
+					 $Return['Form_Student_Id'][$i]  			= $resultGetType['Form_Student_Id'];
+					 $Return['Form_Student_Description'][$i]= $resultGetType['Form_Student_Description'];
+					 $Return['Form_Student_Path'][$i]		= Config::get('url/host')."assets".$resultGetType['Form_Student_Path'];
+					 $Return['Form_Student_Date_mySql'][$i] = $resultGetType['Form_Student_Date'];
+					 $Return['Form_Student_Date'][$i]  		= date("d-m-Y", strtotime($resultGetType['Form_Student_Date']));
+					 $Return['Student_Id'][$i] 				= $resultGetType['Student_Id'];
+							
+						
+							$i++;
+							
+					} // End while loop
+					
+					
+					return $Return;  // return the array which contain the form type.
+				}else{
+					return 0;  // return 1 because it is false
+				}
+			
+		} // end Delete_User($User_Id)
+		
+		
+		
+			
+		
+	public function Delete_Student_Form($Form_Student_Id)
+		{
+			$query_Delete = $this->_db->prepare("DELETE QUICK FROM FORM_STUDENT WHERE Form_Student_Id = ? ");
+			$query_Delete->bindParam(1, $Form_Student_Id);
+			$query_Delete->execute();
+			
+			if($query_Delete->rowCount() == 1)
+				{	
+					return 1;  // return 1 because it is true
+				}else{
+					return 0;  // return 1 because it is false
+				}
+			
+		} // end Delete_User($User_Id)
+		
+		
+		
+		
+		
+		
+		
+		
+		
 } // End class User
-
-
 

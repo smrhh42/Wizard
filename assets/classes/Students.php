@@ -1261,17 +1261,19 @@ public function Update_Students($Term_Code,$Name_Last,$Name_First,
 					$GPA_Hours_G						= (isset($result_Students['GPA_Hours_G']) ? $result_Students['GPA_Hours_G'] : null);
 					$Grade_Points_G 					= (isset($result_Students['Grade_Points_G']) ? $result_Students['Grade_Points_G'] : null);
 					$GPA_G 								= (isset($result_Students['GPA_G']) ? $result_Students['GPA_G'] : null);
-					$Overral_Hours_Passed_G 	= (isset($result_Students['Overral_Hours_Passed_G']) ? $result_Students['Overral_Hours_Passed_G'] : null);-
+					$Overral_Hours_Passed_G 	= (isset($result_Students['Overral_Hours_Passed_G']) ? $result_Students['Overral_Hours_Passed_G'] : null);
 								
-									$Transfer_Hours_G 					= (isset($result_Students['Transfer_Hours_G']) ? $result_Students['Transfer_Hours_G'] : null);
-									$Cumulative_Credits_G 			= (isset($result_Students['Cumulative_Credits_G']) ? $result_Students['Cumulative_Credits_G'] : null);
-									$Cumulative_Quality_Points_G 	= (isset($result_Students['Cumulative_Quality_Points_G']) ? $result_Students['Cumulative_Quality_Points_G'] : null);
-									$Registration_Status_Date 		= (isset($result_Students['Registration_Status_Date']) ? $result_Students['Registration_Status_Date'] : null);
-									$Hours_Registerd 					= (isset($result_Students['Hours_Registerd']) ? $result_Students['Hours_Registerd'] : null);
-									$College_1_Description 			= (isset($result_Students['Registration_Status_Date']) ? $result_Students['Registration_Status_Date'] : null);
-									$Program_1							= (isset($result_Students['Program_1']) ? $result_Students['Program_1'] : null);
-								
-						
+			$Transfer_Hours_G 		 = (isset($result_Students['Transfer_Hours_G']) ? $result_Students['Transfer_Hours_G'] : null);
+			$Cumulative_Credits_G = (isset($result_Students['Cumulative_Credits_G']) ? $result_Students['Cumulative_Credits_G'] : null);
+			$Cumulative_Quality_Points_G = (isset($result_Students['Cumulative_Quality_Points_G']) ? $result_Students['Cumulative_Quality_Points_G'] : null);
+			$Registration_Status_Date 	= (isset($result_Students['Registration_Status_Date']) ? $result_Students['Registration_Status_Date'] : null);
+			$Hours_Registerd 	= (isset($result_Students['Hours_Registerd']) ? $result_Students['Hours_Registerd'] : null);
+			$College_1_Description = (isset($result_Students['Registration_Status_Date']) ? $result_Students['Registration_Status_Date'] : null);
+	$Program_1			= (isset($result_Students['Program_1']) ? $result_Students['Program_1'] : null);
+	$Level_1_Code				= (isset($result_Students['Level_1_Code']) ? $result_Students['Level_1_Code'] : null);
+	$Degree_1_Code				= (isset($result_Students['Degree_1_Code']) ? $result_Students['Degree_1_Code'] : null);
+	$Curriculum1_1				= (isset($result_Students['Curriculum1_1']) ? $result_Students['Curriculum1_1'] : null);
+	$College_1_Description	= (isset($result_Students['College_1_Description']) ? $result_Students['College_1_Description'] : null);
 					
 					
 					
@@ -1309,6 +1311,11 @@ public function Update_Students($Term_Code,$Name_Last,$Name_First,
 							$resultStudent['Hours_Registerd'][$i]					=	utf8_encode($Hours_Registerd); 
 							$resultStudent['College_1_Description'][$i]				=	utf8_encode($College_1_Description); 
 							$resultStudent['Program_1'][$i]							=	utf8_encode($Program_1); 
+							$resultStudent['Level_1_Code'][$i]						=	utf8_encode($Level_1_Code); 
+							$resultStudent['Degree_1_Code'][$i]						=	utf8_encode($Degree_1_Code); 
+							$resultStudent['Curriculum1_1'][$i]						=	utf8_encode($Curriculum1_1); 
+							$resultStudent['College_1_Description'][$i]				=	utf8_encode($College_1_Description); 
+							
 							
 							$i++;
 						

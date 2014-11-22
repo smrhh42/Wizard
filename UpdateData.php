@@ -1,5 +1,5 @@
 <?php
-include('header.php');
+	include('header.php');
 ?>
 <section id="main-content">
 	<section class="wrapper">       

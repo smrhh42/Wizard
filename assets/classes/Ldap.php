@@ -50,6 +50,7 @@ class Ldap
 			$UserObject['TU_ID'] 		= $info[0]['templeedutuid'][0];
 			$UserObject['dn'] 			= $info[0]['dn'];
 		
+					
 			if($NumberEntries == 0){
 		
 				return 0; // return 0 because the system do not finde any user
@@ -71,6 +72,11 @@ class Ldap
 				// Know I need to start the Session and laund the index pages. 
 					$_SESSION['UserObject'] = $UserObject;
 					$_SESSION['Time'] = time();
+					
+			/////////// Store the info of the user into User_Ldap table ////////////
+			$Insert_Userd_Ldap = new User_Ldap();
+			$Insert_Userd_Ldap->Insert_User_Ldap($UserObject['Name'],$UserObject['LastName'],$UserObject['Email'] ,$UserObject['TU_ID']);
+					
 					return 1;	/// Return 1 because the user is success logged.
 						
 				 }else{
