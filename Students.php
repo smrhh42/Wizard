@@ -1,8 +1,7 @@
-<html lang="en"><head><script src="chrome-extension://mfjbeojcanoanmhogkhogpkaknbjgigb/analyster/common.js"></script><script src="chrome-extension://mfjbeojcanoanmhogkhogpkaknbjgigb/extensionconfig.js"></script><script src="chrome-extension://mfjbeojcanoanmhogkhogpkaknbjgigb/amtCore.js"></script><script>
-	//// This is to store the user object into and javascript object to be use later on the javascript functions. 
-	var User_Info = {"Email":"tuc33380@temple.edu","College":"CST:Computer & Info Sci","Role":{"count":2,"0":"student","1":"member"},"title":null,"Name":"Chelsea L.","LastName":"Riggins","TU_ID":"912766218","dn":"templeEduTUNIC=4012440165374424,ou=people,dc=temple,dc=edu"};// don't use quotes
+<?php
+ include('header.php');
+?>
 
-</script>
 
 <!--Modified by Shane Riggins, Dec. 5,2014-->
 
@@ -704,8 +703,10 @@
 
 
 	 <!-- js placed at the end of the document so the pages load faster -->
-<?php include()?>
 
+<?php
+include('include.php');
+?>
     <!--common script for all pages-->
     <script src="assets/js/common-scripts.js"></script>
      
