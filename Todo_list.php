@@ -10,7 +10,6 @@ include('header.php');
         
         
       <h1> This is my todo list page </h1>
-<<<<<<< HEAD
       </section>
 
   </section>
@@ -34,7 +33,6 @@ include('header.php');
 
   </body>
 </html>
-=======
 	
 	<!--main content end-->
 	</section>
@@ -44,4 +42,3 @@ include('header.php');
 	
 	<!--script for this page-->
 	<script src=""></script> 
->>>>>>> ce96d2af16b9624d5bd2bd8f7c8b4360638afe7f
